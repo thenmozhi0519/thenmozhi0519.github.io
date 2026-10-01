@@ -30,13 +30,13 @@ a { color: var(--accent); }
 .hint { margin-top: auto; color: var(--muted); font-size: .85rem; }
 
 /* STAGE: one panel visible at a time */
-.stage { position: relative; overflow-y: auto; padding: 64px 7vw; }
+.stage { position: relative; overflow-y: auto; padding: 48px 7vw; }
 .panel { display: none; max-width: 760px; }
 .panel.active { display: block; animation: slide .45s ease; }
 @keyframes slide { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .panel.active { animation: none; } }
 
-h1 { font-size: clamp(3.2rem, 9vw, 6.5rem); font-weight: 800; margin: 8px 0 22px; }
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; margin: 8px 0 18px; }
 h1 { background: linear-gradient(90deg, var(--ink), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 h2 { font-size: 2.4rem; font-weight: 800; margin: 0 0 22px; }
 .eyebrow { color: var(--accent); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; }
@@ -80,6 +80,12 @@ h2 { font-size: 2.4rem; font-weight: 800; margin: 0 0 22px; }
 }
 
 /* Motivational line */
-.mantra { margin-top: 34px; font-weight: 600; color: var(--second); }
+.mantra { margin-top: 24px; font-weight: 600; color: var(--second); }
 .mantra span { color: var(--muted); margin: 0 8px; }
 .how { border-left: 4px solid var(--accent); padding-left: 16px; }
+
+/* About photo */
+.about-wrap { display: flex; gap: 28px; align-items: flex-start; }
+.photo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent); flex-shrink: 0; }
+.about-text p:first-child { margin-top: 0; }
+@media (max-width: 760px) { .about-wrap { flex-direction: column; align-items: center; } .photo { width: 150px; height: 150px; } }
