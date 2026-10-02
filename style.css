@@ -86,5 +86,5 @@ h2 { font-size: 2.4rem; font-weight: 800; margin: 0 0 22px; }
 
 /* About photo */
 .about-wrap { display: flex; gap: 28px; align-items: flex-start; }
-.photo { width: 180px; height: 180px; border-radius: 50%; object-fit: contain; object-position: center top; padding: 9px 9px 0; background: #fcfcfe; border: 4px solid var(--accent); flex-shrink: 0; }.about-text p:first-child { margin-top: 0; }
+.photo { width: 180px; height: 180px; border-radius: 50%; object-fit: contain; object-position: center top; padding: 7px 7px 0; background: #fcfcfe; border: 4px solid var(--accent); flex-shrink: 0; }.about-text p:first-child { margin-top: 0; }
 @media (max-width: 760px) { .about-wrap { flex-direction: column; align-items: center; } .photo { width: 150px; height: 150px; } }
